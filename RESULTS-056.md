@@ -67,6 +67,8 @@ kit check（transcripts なし、HEAD `01e7639`、`check.log`、rc=1）:
 
 ## 正典・指示書との食い違い
 
+- 正典 `makefun-提出手順-正典.md` は見つからず、読めていない。`~/claude-queue` 配下には無い。ホーム全体を探した `mdfind`/`find` は時間切れで止まり、結果は出なかった。手順は、指示書、kit の RULES.txt と help、過去チケット（046/047/054/055）の結果に基づく
+
 - kit.json に `level` フィールドが無い（054 と同じ）。照合は CLI の `KIT_LEVEL` とサイトのヘッダ `x-makefun-kit-level` で行った
 - 「settings.json は bundle から外す」は、kit level 36 では手段が無い（上の2）
 - About の要件: requirements の topics は `makefun, ai-agents, bounties, growth` で、description にも定型文がある。055 で設定したのは `makefun` だけ。repo_about が要求するのは「website が make.fun 上にあり、topic に makefun がある」ことなので、満たしているはず。指示書の禁止事項に従い、About は変えていない
